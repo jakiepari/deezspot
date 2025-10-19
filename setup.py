@@ -6,7 +6,7 @@ README.close()
 
 setup(
 	name = "deezspot",
-	version = "1.5",
+	version = "1.6",
 	description = "Downloads songs, albums or playlists from deezer and spotify (clone from https://pypi.org/project/deezloader/)",
 	long_description = readmed,
 	long_description_content_type = "text/markdown",
