@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "deezspot"
-version = "1.5"
+version = "1.6"
 description = "Downloads songs, albums or playlists from deezer and spotify (clone from deezloader)"
 readme = "README.md"
 requires-python = ">=3.10"
