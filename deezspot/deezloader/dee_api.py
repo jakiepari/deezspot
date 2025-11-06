@@ -232,6 +232,8 @@ class API:
 				song_metadata['nb_tracks'] = album_json['nb_tracks']
 
 			song_metadata['music'] = json_track['title']
+			song_metadata['explicit'] = json_track['explicit_lyrics']
+
 			array = []
 
 			for contributor in json_track['contributors']:
@@ -253,6 +255,7 @@ class API:
 
 	@classmethod
 	def tracking_album(cls, ids, tags_separator = None):
+			album_json = cls.get_album(ids)
 			song_metadata = {
 				"music": [],
 				"artist": [],
