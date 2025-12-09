@@ -26,6 +26,11 @@ Or
 pip install git+https://github.com/jakiepari/deezspot
 ```
 
+Also you need to install this package:
+```bash
+pip install git+https://github.com/kokarare1212/librespot-python
+```
+
 ## 🔑 Authentication Setup
 
 ### Deezer Authentication
