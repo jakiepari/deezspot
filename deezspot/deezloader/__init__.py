@@ -127,7 +127,7 @@ class DeeLogin:
 		except NoDataApi:
 			raise AlbumNotFound(link_album)
 
-		song_metadata = API.tracking_album(album_json)
+		song_metadata = API.tracking_album(ids, tags_separator=self.tags_separator)
 
 		preferences = Preferences()
 
