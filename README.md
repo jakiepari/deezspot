@@ -21,7 +21,7 @@ USE AS YOUR OWN RISK I'M NOT RESPONSIBLE TO ANY YOUR PROBLEM AT SPOTIFY OR DEEZE
 ```bash
 pip install deezspot
 ```
-Or
+But will be better use this one
 ```bash
 pip install git+https://github.com/jakiepari/deezspot
 ```
