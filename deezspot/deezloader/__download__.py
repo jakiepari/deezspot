@@ -520,9 +520,18 @@ class DW_ALBUM:
 		)
 
 		for a in t:
+			missing_metadata = False
 			for key, item in self.__song_metadata_items:
 				if type(item) is list:
-					c_song_metadata[key] = self.__song_metadata[key][a]
+					values = self.__song_metadata[key]
+					if a < len(values):
+						c_song_metadata[key] = values[a]
+					else:
+						missing_metadata = True
+						break
+
+			if missing_metadata:
+				continue
 
 			c_infos_dw = infos_dw[a]
 			c_infos_dw['media_url'] = medias[a]
